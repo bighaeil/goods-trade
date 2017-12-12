@@ -1,0 +1,47 @@
+@import 'common.less';
+
+@gt-trade-card-height: 100px;
+
+.gt-trade-list > li {
+  display: inline-block;
+  width: 300px;
+  height: @gt-trade-card-height;
+  margin: 0px 15px 15px 0px;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.gt-trade-img {
+  display: inline-block;
+  width: @gt-trade-card-height;
+  height: @gt-trade-card-height;
+  background-size: cover;
+  background-position: 50% 50%;
+  vertical-align: top;
+}
+
+.gt-trade-text {
+  display: inline-block;
+  width: calc(~'100% - '  @gt-trade-card-height + 5px);
+  padding: 5px;
+  font-size: 12px;
+  vertical-align: top;
+}
+
+.gt-trade-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gt-trade-intro {
+  display: -webkit-box;
+  height: 51px;
+  color: #999;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}

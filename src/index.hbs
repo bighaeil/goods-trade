@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Goods Trade</title>
+</head>
+<body>
+{{> template/header}}
+<div class="container">
+    <div class="row">
+        <h3 class="gt-title">굿즈 게시판</h3>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        가수그룹 <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">그룹</a></li>
+                        <li><a href="#">솔로</a></li>
+                    </ul>
+                </div>
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        가수 <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">아이유</a></li>
+                        <li><a href="#">레드벨벳</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+            <button class="btn btn-primary">추가</button>
+    </div>
+    <div class="row">
+        <div class="bar col-md-12"></div>
+    </div>
+    <div class="row">
+        <ul class="gt-trade-list">
+            <li table-id="2">
+                <div class="gt-trade-img" style="background-image: url(./img/2/21227428_118245952135014_7328286368252035072_n.jpg)"></div>
+                <div class="gt-trade-text">
+                    <div class="gt-trade-title">레드벨벳 사인 엽서</div>
+                    <div class="gt-trade-singer">레드벨벳(레드벨벳)</div>
+                    <div class="gt-trade-state">판매중</div>
+                    <div class="gt-trade-writer">게시자 : asdf</div>
+                    <div class="gt-trade-date">2017.11.31 17:00</div>
+                </div>
+            </li>
+            <li table-id="1">
+                <div class="gt-trade-img" style="background-image: url(./img/1/DL_mVhOUQAAPC4R.jpg)"></div>
+                <div class="gt-trade-text">
+                    <div class="gt-trade-title">아이유 2017아이유투어콘서트서울 티켓</div>
+                    <div class="gt-trade-singer">아이유(솔로)</div>
+                    <div class="gt-trade-state">판매중</div>
+                    <div class="gt-trade-writer">게시자 : asdf</div>
+                    <div class="gt-trade-date">2017.11.31 17:00</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+{{> template/footer}}
+</body>
+</html>
