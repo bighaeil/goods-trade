@@ -1,0 +1,12 @@
+{{#each this}}
+<li table-id="{{id}}">
+    <div class="gt-trade-img" style="background-image: url({{img}})"></div>
+    <div class="gt-trade-text">
+        <div class="gt-trade-title">{{title}}</div>
+        <div class="gt-trade-singer">{{singer}}({{groups}})</div>
+        <div class="gt-trade-state">{{state}}</div>
+        <div class="gt-trade-writer">게시자 : {{writer}}</div>
+        <div class="gt-trade-date">{{writeDt}}</div>
+    </div>
+</li>
+{{/each}}
